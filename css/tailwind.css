@@ -1,0 +1,16 @@
+.hello {
+    color: purple;
+}
+
+/*
+    tailwind "layers"
+*/
+
+/* base - a series of css resets for font size, margins etc */
+@tailwind base;
+
+/* components - ? */
+@tailwind components;
+
+/* utilities - all the tailwind utility classes */
+@tailwind utilities;
