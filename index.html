@@ -9,24 +9,43 @@
     <link rel="stylesheet" href="/css/tailwind.css">
 </head>
 
-<body class="bg-gray-100">
-    <div class="max-w-md px-8 py-12 mx-auto sm:max-w-xl">
-        <img class="h-10" src="/img/logo.svg" alt="Workcation">
-        <img class="object-center mt-6 rounded-lg shadow-2xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover" 
+<body class="bg-gray-300">
+    <div class="grid bg-gray-100 lg:grid-cols-2">
+
+        <div class="max-w-md px-8 py-12 mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full">
+            <!-- logo -->
+            <img class="h-10" src="/img/logo.svg" alt="Workcation">
+            <!-- image (md) -->
+            <img class="object-center mt-6 rounded-lg shadow-2xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover lg:hidden" 
             src="/img/beach-work.jpg" 
             alt="Woman workcationing on the beach">
-        <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl">
-            You can work from anywhere.
-            <span class="text-indigo-500">Take advantage of it.</span>
-        </h1>
-        <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
-            Workcation helps you find work-friendly rentals in beautiful locations so you can
-            enjoy some nice weather even when you're not on vacation.
-        </p>
-        <div class="mt-4 sm:mt-6">
-            <a class="inline-block px-5 py-3 text-sm font-semibold tracking-wider text-white uppercase bg-indigo-500 rounded-lg shadow-lg sm:text-base" href="#">Book your escape</a>
+            <!-- heading -->
+            <h1 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl lg:text-3xl">
+                You can work from anywhere.
+                <br class="hidden lg:inline">
+                <span class="text-indigo-500">Take advantage of it.</span>
+            </h1>
+            <p class="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
+                Workcation helps you find work-friendly rentals in beautiful locations so you can
+                enjoy some nice weather even when you're not on vacation.
+            </p>
+            <div class="mt-4 sm:mt-6">
+                <a class="inline-block px-5 py-3 text-sm font-semibold tracking-wider text-white uppercase bg-indigo-500 rounded-lg shadow-lg sm:text-base" href="#">
+                    Book your escape
+                </a>
+            </div>
+        </div>
+        <div class="relative hidden lg:block">
+            <!-- image (lg) -->
+            <img class="absolute inset-0 object-cover object-center w-full h-full" src="/img/beach-work.jpg" alt="Woman workcationing on the beach">
         </div>
     </div>
+    <div class="sm:hidden">xs</div>
+    <div class="hidden sm:inline md:hidden">sm</div>
+    <div class="hidden md:inline lg:hidden">md</div>
+    <div class="hidden lg:inline xl:hidden">lg</div>
+    <div class="hidden xl:inline 2xl:hidden">xl</div>
+    <div class="hidden 2xl:inline">2xl</div>
 </body>
 
 </html>
